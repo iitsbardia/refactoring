@@ -1,2 +1,5 @@
-ae7418e (HEAD -> main) Task 1
+79686b2 (HEAD -> main) Task 2 - end of part 4.b
+3d71ca7 Task 1.2 - continued
+d161c17 Task 1.2
+ae7418e Task 1
 af29752 (origin/main, origin/HEAD) Initial commit
