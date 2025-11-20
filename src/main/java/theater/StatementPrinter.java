@@ -46,13 +46,13 @@ public class StatementPrinter {
         return result.toString();
     }
 
-    private int getVolumeCredits(Performance performance, int volumeCredits) {
-        volumeCredits += Math.max(performance.audience - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
+    private int getVolumeCredits(Performance performance, int result) {
+        result += Math.max(performance.audience - Constants.BASE_VOLUME_CREDIT_THRESHOLD, 0);
         // add extra credit for every five comedy attendees
         if ("comedy".equals(getPlay(performance).type)) {
-            volumeCredits += performance.audience / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
+            result += performance.audience / Constants.COMEDY_EXTRA_VOLUME_FACTOR;
         }
-        return volumeCredits;
+        return result;
     }
 
     private Play getPlay(Performance performance) {
