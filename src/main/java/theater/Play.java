@@ -13,11 +13,11 @@ public class Play {
         this.type = type;
     }
 
-    public final String getName() {
+    public String getName() {
         return name;
     }
 
-    public final String getType() {
+    public String getType() {
         return type;
     }
 }
